@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufaktura Patriotyczna - Kotyliony i Flagi</title>
+    <style>
+        :root {
+            --red: #dc143c;
+            --white: #ffffff;
+            --dark: #333;
+            --grey: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+            color: var(--dark);
+        }
+
+        header {
+            background: white;
+            border-bottom: 5px solid var(--red);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Sekcja Produktów */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: 250px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.4em;
+            color: var(--red);
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* Formularz */
+        .order-box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            background: var(--red);
+            color: white;
+            border: none;
+            padding: 18px;
+            width: 100%;
+            font-size: 1.2em;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .submit-btn:hover {
+            background: #b01030;
+            transform: translateY(-2px);
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .faq-q {
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: #fff;
+        }
+
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.3s ease;
+            background: #fefefe;
+            padding: 0 10px;
+            color: #666;
+        }
+
+        .faq-q:hover {
+            color: var(--red);
+        }
+
+        /* Tekst Patriotyczny */
+        .patriotic-text {
+            background: var(--red);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+
+        .badge-info {
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            margin-top: 10px;
+            display: inline-block;
+            color: #0d47a1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Manufaktura Barw Narodowych</h1>
+        <p>Symbole, które łączą. Tradycyjne rozety i nowoczesne flagi-przypinki.</p>
+    </header>
+
+    <div class="container">
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="kotylion.jpg" alt="Kotylion Rozeta">
+                <h3>Kotylion Rozeta Klasyczna</h3>
+                <p>Elegancka, okrągła kokarda narodowa bez ogonków. Styl retro, idealny do garnituru i płaszcza.</p>
+                <p class="price">4,90 zł / szt.</p>
+                <div class="badge-info">Zapięcie: Bezpieczna agrafka</div>
+            </div>
+
+            <div class="product-card">
+                <img src="placeholder_flaga.png" alt="Mini flaga przypinka">
+                <h3>Mini Flaga (Przypinka)</h3>
+                <p>Dyskretna flaga na bluzę lub kurtkę. Wykonana z metalu lub usztywnianej wstążki.</p>
+                <p class="price">3,50 zł / szt.</p>
+                <div class="badge-info">Zapięcie: Magnetyczne lub Pins</div>
+            </div>
+        </div>
+
+        <div class="patriotic-text">
+            <h2>"Biel i Czerwień to duma i honor"</h2>
+            <p>Nasze produkty powstają z myślą o tych, którzy chcą manifestować swoją polskość w sposób godny i
+                estetyczny. Niezależnie czy wybierzesz klasyczną rozetę, czy nowoczesną mini-flagę – nosisz symbol
+                wolności.</p>
+                <img src="placeholder_people_kotylion.png" alt="Ludzie noszący kotyliony" width="450">
+        </div>
+
+        <div class="order-box">
+            <h2 style="text-align: center; color: var(--red);">Złóż zamówienie</h2>
+            <form>
+                <div class="form-group">
+                    <label>Wybierz produkt:</label>
+                    <select>
+                        <option>Kotylion Rozeta (klasyczny)</option>
+                        <option>Mini Flaga (przypinka)</option>
+                        <option>Zestaw Mieszany</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Ilość (sztuki):</label>
+                    <input type="number" placeholder="Wpisz ilość, np. 50" min="1">
+                </div>
+                <div class="form-group">
+                    <label>Dane do wysyłki (Imię, Nazwisko, Adres, Telefon):</label>
+                    <textarea rows="4" placeholder="Twoje pełne dane..."></textarea>
+                </div>
+                <button type="button" class="submit-btn">Zamów z darmową wyceną</button>
+            </form>
+        </div>
+
+        <h2 style="margin-top: 60px; text-align: center;">FAQ - Pytania i odpowiedzi</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-q" onclick="toggleFaq(this)">Czy kotylion ma wiszące tasiemki? <span>+</span></div>
+                <div class="faq-a">
+                    <p>Ten konkretny model to klasyczna rozeta (okrągła) bez tasiemek ("ogonków"). Dzięki temu jest
+                        bardziej zwarty i elegancki.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q" onclick="toggleFaq(this)">Jak przypiąć mini-flagę, żeby nie zniszczyć ubrania?
+                    <span>+</span></div>
+                <div class="faq-a">
+                    <p>Nasze mini-flagi oferujemy z zapięciem magnetycznym (nie przebija materiału) lub na cienką igłę
+                        typu pins, która jest bezpieczna dla większości tkanin.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q" onclick="toggleFaq(this)">Czy wystawiacie faktury VAT? <span>+</span></div>
+                <div class="faq-a">
+                    <p>Tak, dla szkół, urzędów i firm wystawiamy pełne faktury VAT oraz oferujemy odroczony termin
+                        płatności.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer style="text-align: center; padding: 40px; color: #999;">
+        &copy; 2025 Manufaktura Barw Narodowych
+    </footer>
+
+    <script>
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                element.querySelector('span').innerText = '+';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                element.querySelector('span').innerText = '-';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
